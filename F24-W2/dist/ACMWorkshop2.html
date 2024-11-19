@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<!-- Which is the tag? Which is the Attribute? -->
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"></link>
+</head>
+
+<main>
+
+    <!-- HTML -->
+
+    <!-- What does this look like? -->
+
+     <ul>
+        <li> CS35L </li>
+        <li> DH101 </li>
+        <li> CHIN1A </li>
+    </ul>
+    
+
+     <!-- What does this look like? -->
+      <ol>
+        <li> CHIN1A </li>
+        <li> CS35L </li>
+        <li> DH101 </li>
+      </ol>
+
+    <!-- What does this look like? -->
+     <dl>
+        <dt>
+            ACM Commitees
+        </dt>
+        <dd>
+            - Board, AI, Cyber, Design, Studio, Hack, ICPC, Teach LA, W, and Cloud
+        </dd>
+        <dt>
+            ACM Design Board
+        </dt>
+        <dd>
+            -  Ed, Tiff, Steph, Bethany, and Coco
+        </dd>
+     </dl>
+
+
+    <!-- Examples for HTML Attributes -->
+
+    <h1>
+        Meet Baobao! 
+    </h1>
+    <img src = "/Users/cocoli/Desktop/ACM Dev Workshops/F24-W2/Bao.png" width = "200" height ="200"alt="Coco's Dog"> </img>
+
+    <!-- Show an example by searching something on Google, right click, inspect -->
+
+    <!-- Create an example yourself applying Img and Src!-->
+
+    <!-- What does this look like? What type of styling is this? --> -->
+    <div style="background-color: orange; color: white;" >
+        What's up? New haircut!
+    </div>
+
+    <!-- Another example of inline styling in addition to the style attribute, but with HTML tag Style! -->
+    
+    <style>
+        .box{
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background: orange;
+            text-align: center;
+        }
+        /* will explain the .box syntax later in our CSS part of workshop today*/
+    </style>
+
+    <h1 id= "Title of the Website"> Workshop 2! </h1>
+    <div class="box" > box1 </div>
+    <div class="box"> box2 </div>
+    <div class="box"> box3 </div>
+
+    <!-- CSS -->
+    <!-- Using Style Sheet for this Part  -->
+
+    <!-- ID and Class Selector Examples -->
+    <h1 id ="Title"> Happy Week 4! </h1>
+    <div class="box"> box1 </div>
+    <div class="box"> box2 </div>
+    <div class="box"> box3 </div>
+    <!-- Give 7 minutes to allow them to play with the various stylings  -->
+
+    <!-- Type Selectors Example -->
+    <div> Line 1 </div>
+    <span> Space </span>
+    <div> Line 2 </div>
+    <span> Space </span>
+    <div> Line 3 </div>
+
+    <!-- Descendant Selectors Examples -->
+     <div>
+        <p> Hello! </p>
+        <p> Thank you </p>
+        <p> for coming </p>
+        <p> today! </p>
+     </div>
+
+    <!-- Example where its we don't have all paragraphs. -->
+    <!-- What does this look like? -->
+     <div>
+        <p> Hello! </p>
+        <p> Thank you </p>
+        <p> for coming </p>
+        <span> today! </span>
+     </div>
+
+     <!-- Super nested Descendant Styling -->
+
+     <div>
+        <p> Hello World! </p>
+        <div>
+            Intersection
+            <p> What's Up! </p>
+        </div>
+     </div>
+
+
+     <!-- Child Selectors Example -->
+    <div>
+        <p> Some words </p>
+        <span>
+            hello!
+            <p> What's up? </p>     
+        </span>
+        <p> Another Set of Words</p>
+    </div>
+
+    <div>
+        <p> Some words </p>
+        <span>
+            hello!
+        </span>
+        <p> Another Set of Words</p>
+    </div>
+
+</main>
+
+</html>

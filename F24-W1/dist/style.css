@@ -1,0 +1,23 @@
+header{
+   font-size:xx-large;
+   padding-top: 1%;
+   background-color: orange;
+}
+div {
+   background-color: yellow;
+   padding-top: 2%;
+   padding-bottom: 2%; 
+}
+
+span{
+   background-color: aqua;  
+}
+
+p{
+   background-color:darkseagreen;
+}
+
+a{
+   background-color: antiquewhite;
+   /* display: block; */
+}

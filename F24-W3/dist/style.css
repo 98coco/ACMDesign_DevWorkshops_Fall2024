@@ -1,0 +1,253 @@
+/* SELECTORS RECAP */
+
+/* Example #1 of Selectors */
+
+/* div {
+  background-color: blue;
+  height: 80px;
+  color: white;
+}
+
+div > h1{
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 50px;
+}   */
+
+/* Example #2 of Selectors  */
+
+/* Recall: .(Name) represents a class */
+
+/* h1{
+  margin: 10px;
+}
+
+.box{
+  margin: 10px;
+  width: 150px;
+  height: 60px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background-color: orangered;
+} */
+
+
+
+/* SPECIFICITY */
+
+/* Example #1.1 */
+
+/* Points: p has 1! div > p has 2! */
+
+/* p{
+  background-color: blue;
+  color:white;
+}
+
+div > p{
+  background-color: yellow;
+  color: black;
+} */
+
+/* Now which of these descendants (previous div>p and next div>p) will get the styling rule? */
+
+/* Example #1.2 */
+/* div > p{
+  background-color: green;
+  color: black;
+} */
+
+/* Example #2 */
+/* 
+.class1{
+  background-color: blueviolet;
+  color: white
+} */
+
+
+/* Example #3 */
+
+/* Which styling will be applied? How many points does each of these properties have? */
+
+/* .class2{
+  background-color: green;
+}
+
+.class3{
+  background-color: yellow;
+} */
+
+/* Example #4 */
+
+/* #myParagraph{
+  background-color: purple;
+  color: white;
+}
+
+p{
+  background-color: green;
+  color: white;
+} */
+
+/* Example #5*/
+
+/* Talk to a neighbor? Which styling rule gets applied given what we know about specificity */
+
+/* #myParagraph{
+  background-color: purple;
+  color: white;
+}
+
+div > p{
+  background-color: red;
+  color: white;
+  text-align: center;
+  height: 50px;
+}   */
+
+
+
+/* BOX MODEL */
+
+/* Example 1 */
+
+/* div{
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+} */
+
+/* Example #2 */
+
+ /* .boxModelExample {
+  width: 200px; 
+  padding: 20px;  
+  padding-top: 30px;
+  border: 5px solid black;
+  margin: 15px;  
+   margin-top: 15px;
+  
+  Background colors for visual representation
+  background-color: lightblue;  
+  border-color: black;
+}  */
+
+/* Example #3 -- block */
+
+/* .boxModelExample {
+  border: 5px solid black;
+  margin: 15px;
+  background-color: lightblue;
+} 
+
+div > p {
+  background-color: plum; 
+  /* width: 100%;  */
+   /* width: 20px;
+ } */ 
+
+/* Example #4 Inline Element */
+
+/* .boxModel{
+  border: 5px solid black;
+  /* width: 100%; */
+  /* margin: 15px; */
+  /* background-color: lightblue;
+} */
+
+/* span{
+  background-color: yellow;
+} */ 
+
+/* Provide 5-7 Minutes to play with box model */
+
+
+/* Flexbox */
+
+/* Example #1  container + items*/
+
+/* .flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  flex-wrap: wrap;
+}
+
+div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}  */
+
+/* Example #2  -- Flex-Container*/
+
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  align-items: center; */
+  /* align-items: flex-start;
+ } */
+
+ /* Example 3 -- Flex-Item */
+
+ /* .flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  align-items: center; 
+ }
+
+
+.items {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  justify-content: flex-start;
+} 
+
+.item3{
+  background-color: yellow;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}  */
+
+/* Provide 5-7 Minutes to play with flexbox */
+
+
+/* GRID */
+
+/* Example #1 - Container and Items */
+
+.grid-container {
+  background-color: plum;
+  display: grid; 
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+  gap: 10px; 
+} 
+
+.grid-item {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  height: 100px;
+  color: black; 
+  font-size: 24px; 
+  font-weight: bold; 
+} 
+
+.item1 { background-color: #FF5733; } 
+.item2 { background-color: #33FF57; } 
+.item3 { background-color: #3357FF; } 
+.item4 { background-color: #F3FF33; } 
+.item5 { background-color: #FF33F6; }
+.item6 { 
+  background-color: #33FFF6;
+  grid-area: 5 / 2 / 6 / 3  ;
+} 
